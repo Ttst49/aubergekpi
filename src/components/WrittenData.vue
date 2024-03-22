@@ -1,13 +1,12 @@
 <script setup lang="ts">
-
-defineProps(['msg','numberData'])
+import chartData from "../json/chartData.json"
 
 </script>
 
 <template>
-  <div class="data">
-    <h5 class="title">{{msg}}</h5>
-    <h1 class="number">{{numberData}}</h1>
+  <div v-for="data in chartData.writtenData" class="data">
+    <h5 class="title">{{data.name}}</h5>
+    <h1 class="number">{{data.data}}</h1>
   </div>
 </template>
 

@@ -19,8 +19,17 @@ import {
   PointElement,
     Filler
 } from 'chart.js'
+import chartData from "@/json/chartData.json";
 
 ChartJS.register(LineElement,Title, Tooltip, Legend, CategoryScale, LinearScale,PointElement,Filler)
+
+let years = []
+let values = []
+for (let i=0; i < chartData.lineData.usersPerYear.length; i++) {
+  years.push(chartData.lineData.usersPerYear[i].year)
+  values.push(chartData.lineData.usersPerYear[i].value)
+}
+
 
 export default {
   name: 'PieChart',
@@ -28,13 +37,14 @@ export default {
   data() {
     return {
       chartData: {
-        labels: [ 'Mer', 'Montagne', 'Tropical',"banane","poire","peche","abricot","pomme","cerise","framboise","myrtille","litchi" ],
+        labels: years,
         datasets: [
           {
-            data: [403, 220, 129,185,431,138,2337,273,1823,3672,822,743],
+            label:"All users by year",
+            data: values,
             fill: false,
-            borderColor: 'rgb(82,248,103)',
-            tension: 0
+            borderColor: 'rgb(38,101,220)',
+            tension: 0,
           }
         ],
       },
