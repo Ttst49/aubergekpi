@@ -1,0 +1,91 @@
+{
+  "writtenData": {
+    "0": {
+      "name": "Active public house",
+      "data": "12.834"
+    },
+    "1": {
+      "name": "active Users",
+      "data": "8.027.809"
+    }
+  },
+
+  "pieData": [
+    {
+        "name": "sea",
+        "value": 40
+      },
+    {
+        "name": "tropical",
+        "value": 12
+    },
+    {
+        "name": "mountain",
+        "value": 20
+    }
+  ],
+
+  "lineData": {
+    "usersPerYear": [
+        {
+          "year": 2019,
+          "value": 3089
+        },
+        {
+          "year": 2020,
+          "value": 1289098
+        },
+        {
+          "year": 2021,
+          "value": 5345239
+        },
+        {
+          "year": 2022,
+          "value": 8090421
+        },
+        {
+          "year": 2023,
+          "value": 11529172
+        },
+        {
+          "year": 2024,
+          "value": 14632821
+        }
+      ]
+    },
+    "gaugeData": {
+      "totalUsers": 78
+    },
+    "tableData": {
+      "0": {
+        "country": "United States",
+        "users": "13.067.237",
+        "device": "Mobile",
+        "impressions": "65.374.837"
+      },
+      "1": {
+        "country": "United States",
+        "users": "846.792",
+        "device": "Laptop",
+        "impressions": "15.938.163"
+      },
+      "2": {
+        "country": "France",
+        "users": "2.726.489",
+        "device": "Mobile",
+        "impressions": "33.028.371"
+      },
+      "3": {
+        "country": "France",
+        "users": "276.943",
+        "device": "Desktop",
+        "impressions": "2.280.052"
+      },
+      "4": {
+        "country": "United Kingdom",
+        "users": "5.197.837",
+        "device": "Mobile",
+        "impressions": "27.948.016"
+      }
+    }
+  }
